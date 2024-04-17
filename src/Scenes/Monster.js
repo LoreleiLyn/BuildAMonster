@@ -139,14 +139,11 @@ class Monster extends Phaser.Scene {
     }
 
     update() {
-        let my = this.my;    // create an alias to this.my for readability
+        let my = this.my; // create an alias to this.my for readability
 
         // Move monster according to move direction and speed
         for (let i in my.sprite) {
             my.sprite[i].x += my.moveSpeed * my.moveDirection;
         }
-        //let velocity = this.moveDirection;
-        //console.log("velocity = " + toString(velocity));
     }
-
 }
